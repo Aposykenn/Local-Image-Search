@@ -1,0 +1,45 @@
+html {
+    background-color: black;
+    color: white;
+    font: medium/1.5 system-ui, sans-serif;
+}
+button {
+    background: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+input {
+    background: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font: inherit;
+    padding: 0.25em 0.5em;
+}
+input:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 0 1px white;
+}
+input::file-selector-button {
+    background: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+input::file-selector-button:hover {
+    background-color: white;
+    color: black;
+}
+
