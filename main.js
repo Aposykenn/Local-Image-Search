@@ -97,7 +97,7 @@ function compareHashes(h1, h2) {
 }
 
 ipcMain.on('start-scraping', async (event, { url, pageCount }) => {
-    const browser = await puppeteer.launch({ headless: false, args: ['--start-maximized', '--disable-popup-blocking'] });
+    const browser = await puppeteer.launch({ headless: true, args: ['--start-maximized', '--disable-popup-blocking'] });
     
     let page = (await browser.pages())[0];
     await page.setViewport({ width: 1366, height: 768 });

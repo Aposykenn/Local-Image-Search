@@ -40,6 +40,10 @@ window.api.onSearchResults((matches) => {
 
 startBtn.addEventListener('click', () => {
     const url = urlInput.value;
+    if (!url) {
+        alert("Please enter a URL.");
+        return;
+    };
     const pages = 20; 
 
 
